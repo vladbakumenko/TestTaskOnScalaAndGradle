@@ -57,6 +57,7 @@ class ConnectionControllerImpl extends ConnectionController {
     stage.setTitle("Твой никнейм: " + connectionModel.nickName.getValue)
     stage.show()
     stage.setOnCloseRequest(_ => connectionModel.system.terminate())
+    stage.setResizable(false)
   }
 
   private def showCautionWindow(): Unit = {
